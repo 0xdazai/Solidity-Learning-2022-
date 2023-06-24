@@ -1,6 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
+
 pragma solidity 0.8.13;
+
 contract Helloworld {
+
+// Hello World + Variables
+
     string public greet = "Hello World!";
     //our hello world example!
     bool public lightSwitch = false;
@@ -19,7 +24,9 @@ contract Helloworld {
     bytes1 exampleBytes = 0x20;
     //this is an example of 8 bits of data
     //THE FOLLOWING VARIABLES ARE 'REFERENCE' TYPES
+
 //arrays
+
     string[] public friends = ["Gabriel", "Lucas", "Neiko"];
     //this creates an array that can change size (denoted by the []) of a bunch of strings
     //it is public, and the name is "friends"
@@ -28,22 +35,29 @@ contract Helloworld {
     //this creates an array of 4 uints
     //it is public and named (tire pressure)
     //you can see it has 30, 29, 29, and 4...
+
 //strings
+
     string public myUsername = "WhiteboardCrypto";
     //this creates a string named "myUsername" which is public
+
 //maps
+
     mapping (string => int) public points;
     //this creates a "map", which is basically an x,y table
     //the left value is a string
     //the right value is an integer
     //the name is points
     //we could store something like "Theodore" = 10 points in the future with this
+
 //structures
+
     struct car{
         uint wheels;
         uint windows;
         string model;
     }
+
     //this creates a new variable type named "car", which has 3 data points -> wheels, windows, and model.
     //wheels and windows MUST be a uint, and model MUST be a string
        car public myBrokenDownFord = car(3,4,"Ford");
