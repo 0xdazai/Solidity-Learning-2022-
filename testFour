@@ -7,6 +7,8 @@ pragma solidity 0.8.13 ;
 
 contract week2day2{
 
+// Global Variables, Errors, Modifiers, and Constructors
+
 
     function getInfo() public view returns(uint, uint, uint, address){
         return (block.chainid, block.difficulty, block.number, msg.sender);
