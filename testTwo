@@ -4,6 +4,8 @@ pragma solidity 0.8.13;
 
 contract day4{
 
+// Functions
+
 
     function addTwos() public returns(int) {
 
